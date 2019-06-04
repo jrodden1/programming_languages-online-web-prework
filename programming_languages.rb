@@ -1,7 +1,4 @@
 require 'pry'
-def get_styles
-
-end
 
 def reformat_languages(languages)
   new_hash = {}
@@ -19,5 +16,5 @@ def reformat_languages(languages)
       end
     end
   end
-
+  new_hash
 end
