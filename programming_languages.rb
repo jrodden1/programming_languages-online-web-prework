@@ -9,13 +9,13 @@ def reformat_languages(languages)
   languages.each do |style, langhash|
     langhash.each do |langName, typehash|
       typehash.each do |type, value|
-        binding.pry
+        # binding.pry
         new_hash[langName] = {type => value}
-          if new_hash[langName].has_key?(:style) == false
-            new_hash[langName] = {:style => [style]}
-          else
-            new_hash[langName][:style] = new_hash[langName][:style] << style
-          end
+        if new_hash[langName].has_key?(:style) == false
+          new_hash[langName] = {:style => [style]}
+        else
+          new_hash[langName][:style] = new_hash[langName][:style] << style
+        end
       end
     end
   end
