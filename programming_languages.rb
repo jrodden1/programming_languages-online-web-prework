@@ -9,7 +9,7 @@ def reformat_languages(languages)
         new_hash[langName] = {type => value}
         binding.pry
         if new_hash[langName].has_key?(:style) == false
-          new_hash[langName][:style] => [style]}
+          new_hash[langName][:style] = [style]}
         else
           new_hash[langName][:style] = new_hash[langName][:style] << style
         end
