@@ -6,10 +6,10 @@ def reformat_languages(languages)
   #Create up blank hashes with all the language names inside of new_hash
   languages.each do |style, langhash|
     langhash.each do |langName, typehash|
-      new_hash[langname] = {}
+      new_hash[langName] = {}
     end
   end
-  binding.pry   
+  binding.pry
 
   languages.each do |style, langhash|
     langhash.each do |langName, typehash|
