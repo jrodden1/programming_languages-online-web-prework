@@ -1,4 +1,8 @@
 require 'pry'
+def get_styles
+
+end
+
 def reformat_languages(languages)
   new_hash = {}
 
@@ -6,8 +10,8 @@ def reformat_languages(languages)
     langhash.each do |langName, typehash|
       typehash.each do |type, value|
         binding.pry
-        new_hash[langName][type] = value
-        new_hash[langName][style] = style
+        new_hash[langName] = {type => value}
+
       end
     end
   end
