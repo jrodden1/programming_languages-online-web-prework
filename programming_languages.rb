@@ -1,5 +1,3 @@
-require 'pry'
-
 def reformat_languages(languages)
   new_hash = {}
 
@@ -9,8 +7,8 @@ def reformat_languages(languages)
       new_hash[langName] = {}
     end
   end
-  binding.pry
 
+  #now go add the details of the type and style to each language, checking first to see if the key needs created.
   languages.each do |style, langhash|
     langhash.each do |langName, typehash|
       typehash.each do |type, value|
